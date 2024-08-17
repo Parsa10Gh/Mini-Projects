@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+    background: linear-gradient(to right , deeppink , yellow);
+    background-size: 400% 400%;
+    animation: change 10s linear infinite;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+@keyframes change{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.box{
+    width: 500px;
+    height: 370px;
+    background-color: azure;
+    margin: 100px;
+    padding-top: 80px;
+    padding-left: 110px;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+input{
+    width: 70%;
+    height: 50px;
+}
+
+button{
+    color: rgb(255, 255, 0);
+    background-color: deeppink;
+    width: 70%;
+    height: 50px;
+    margin-bottom: 9px;
+    font-weight: 540;
+    border: 0;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(255, 255, 0);
+    color: deeppink;
+    font-weight: 550;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+p{
+    margin: 29px ;
+    font-size: 14px;
+    color: #872e7a;
+}
+
+a{
+    text-decoration: none;
+    color: deeppink;
+}
+a:hover{
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+.modal{
+    height: 70px;
+    width: 400px;
+    background-color: rgba(176, 9, 0, 0.932);
+    margin-top: 30px;
+    border-radius: 16px;
+    color: white;
+    line-height: 70px;
+    padding-left: 20px ;
+    display: none;
+}
+.userValidation, .passValidation {
+    display: none;
+    font-size: 13px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
